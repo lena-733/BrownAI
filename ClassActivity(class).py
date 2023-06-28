@@ -12,5 +12,7 @@ class student:
         elif self.smartness<=5 and self.Class<=5:
             print("he can probably pass")
 
-student1=student(3,1)
+smartness = input("how smart are you?\n")
+Class = input("how hard is your class?\n")
+student1=student(int(smartness),int(Class))
 student1.canHeDoIt()
