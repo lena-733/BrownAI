@@ -1,4 +1,12 @@
-choiceoftime = input ("do you want to convert hours or minutes?\n")
+def corrector(question):
+  correct = input(question)
+  if correct == "hours" or correct == "minutes":
+     return correct
+  else:
+      print('Please enter hours or minutes!')
+      return corrector(question)
+
+choiceoftime = corrector("would you like to convert minutes or hours?\n")
 if choiceoftime == "hours":
     hrsstr=input("how many hours do you want to convert?\n")
     if "." in hrsstr:
