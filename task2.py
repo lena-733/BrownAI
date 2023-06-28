@@ -22,7 +22,7 @@ if choiceoftime == "hours":
     print(hrsstr+" hours is "+minstr+" minutes")
 elif choiceoftime == "minutes":
     minute=input("how many minutes do you wan to conver?\n")
-    if "." in minuter:
+    if "." in minute:
         minutefloat = float(minute)
         hours = minutefloat * 60
         hourstr = str(hours)
