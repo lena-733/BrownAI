@@ -16,13 +16,17 @@ class course:
     def __init__(self, students, teacher):
         self.students = students
         self.teacher = teacher
-    def coursinfo(self):
-        print("This cource is taught by "+ teacher+ " and has " +str(students)+ " students")
+    def courseinfo(self):
+        print("This course is taught by "+ self.teacher + " and has " +str(self.students)+ " students")
 
-smartness = input("how smart are you?\n")
-Class = input("how hard is your class?\n")
-student1=student(int(smartness),int(Class))
-student1.canHeDoIt()
+
+
+if __name__ =="__main__":
+    smartness = input("how smart are you?\n")
+    Class = input("how hard is your class?\n")
+    student1=student(int(smartness),int(Class))
+    student1.canHeDoIt()
+    #not sure how to work this 
 
 
 
